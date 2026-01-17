@@ -5,7 +5,7 @@ It highlights my skills, projects, and background with a modern, clean, and resp
 
 
 
-🚀 Tech Stack
+## Tech Stack
 
 Frontend: React
 
@@ -19,7 +19,7 @@ Linting: ESLint
 
 Version Control: Git & GitHub
 
-✨ Features
+## Features
 
 ⚛️ Built with modern React
 
