@@ -17,7 +17,7 @@ const Navbar = () => {
 
 
     return (
-        <header className="fixed top-0 right-0 left-0 py-5 bg-transparent">
+        <header className="fixed top-0 right-0 left-0 py-5 bg-transparent z-50">
             <nav className="container mx-auto flex items-center justify-between px-6">
                 <a href="#" className="text-xl font-bold tracking-tight  hover:text-primary">IJ <span className="text-primary">.</span></a>
                 <div className="hidden md:flex items-center gap-1">
