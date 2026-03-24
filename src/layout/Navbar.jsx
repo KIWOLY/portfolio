@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "../cmponent/Button";
+import Button from "../component/Button";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
