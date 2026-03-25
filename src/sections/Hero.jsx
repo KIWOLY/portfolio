@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../component/Button';
-import { ArrowRight} from 'lucide-react';
+import { ArrowRight, Github, Instagram, Linkedin} from 'lucide-react';
 import SvgButton from '../component/SvgButton';
 
 const Hero = () => {
@@ -59,8 +59,38 @@ const Hero = () => {
                             <SvgButton/>
                         </div>
 
+                        {/* social link */}
+                        <div className='flex items-baseline gap-4 animate-fade-in animation-delay-400'>
+                            <span className='text-sm text-muted-foreground'>Follow :</span>
+                            {[
+                                {icon:Github, href:"#"},
+                                {icon:Linkedin, href:"#"},
+                                {icon:Instagram, href:"#"}
+                            ].map((social, index)=> (
+                                <a key={index} href={social.href} className='p-2 rouded-full glass hover:bg-primary/10 hover:text-primary'> {< social.icon className='w-5 h-5'/>}</a>
+                            ))}
+                        </div>
+
                     </div>
                     {/* right column -profile picture */}
+                    <div className='relative animate-fade-in animation-delay-400'>
+                        {/* profile image */}
+                        <div className='relative max-w-md mx-auto'>
+                            <div className='relative glass rounded-3xl p-2 glow-border'>
+                                <img src="/profile4.jpeg" alt="Kiwoly" className='w-full aspect-[4/5] object-cover rounded-2xl' />
+
+                                {/* Floating Badge */}
+                                <div  className='absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float '>
+                                    <div className='flex items-center gap-3'>
+                                        <div className='w-3 h-3 bg-green-500 rounded-full animate-pulse'>
+
+                                        </div>
+                                           <span  className='text-sm font-medium'>Available for work </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
